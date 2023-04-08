@@ -1621,6 +1621,13 @@ agentkeepalive@^2.2.0:
   resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-2.2.0.tgz#c5d1bd4b129008f1163f236f86e5faea2026e2ef"
   integrity sha1-xdG9SxKQCPEWPyNvhuX66iAm4u8=
 
+algoliasearch-helper@^3.11.3:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.12.0.tgz#0fe39d49b0290e4aa5e1fe733bd24d857d258e94"
+  integrity sha512-/j1U3PEwdan0n6P/QqSnSpNSLC5+cEMvyljd5CnmNmUjDlGrys+vFEOwjVEnqELIiAGMHEA/Nl3CiKVFBUYqyQ==
+  dependencies:
+    "@algolia/events" "^4.0.1"
+
 algoliasearch-helper@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.7.0.tgz#c0a0493df84d850360f664ad7a9d4fc78a94fd78"
@@ -4436,7 +4443,29 @@ react-instantsearch-core@6.22.0:
     prop-types "^15.6.2"
     react-fast-compare "^3.0.0"
 
-react-instantsearch-dom@6.22.0, react-instantsearch-dom@^6.12.0:
+react-instantsearch-core@6.39.1:
+  version "6.39.1"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.39.1.tgz#3c2948d3cfea3c58b2e9902b6fcc245aaa0bae7b"
+  integrity sha512-rvzOoNGBT2O28mmcpXfcN4pVF+p07jlDMbEKB1TRdW3jE9dm8U6uCS/X6DWqigYLr8svVRcG/Ez+wzYK+yuPZw==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    algoliasearch-helper "^3.11.3"
+    prop-types "^15.6.2"
+    react-fast-compare "^3.0.0"
+
+react-instantsearch-dom@6.39.1:
+  version "6.39.1"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.39.1.tgz#103af882415d427325330102379a02e66e5d7bc8"
+  integrity sha512-lfTHQZ3ILwlQeDsd+GqvVCVLyOzK8FYMtICJvc0PXANhcXXMM+7WvqJGlDclcnujPPSDuQl6MmKTHcTNVapQoA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    algoliasearch-helper "^3.11.3"
+    classnames "^2.2.5"
+    prop-types "^15.6.2"
+    react-fast-compare "^3.0.0"
+    react-instantsearch-core "6.39.1"
+
+react-instantsearch-dom@^6.12.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.22.0.tgz#2687e1be5dad5781ac6d89b6dadc9997d4550ffb"
   integrity sha512-geXYTQqGsLggbf7MMuSPgXjuZ3yWtWjjPRWEbXmAHZ4oodbdYiKIuieTDoadYM+m+Y90WXpwn+hMi0EDTffeRA==
@@ -4448,24 +4477,24 @@ react-instantsearch-dom@6.22.0, react-instantsearch-dom@^6.12.0:
     react-fast-compare "^3.0.0"
     react-instantsearch-core "6.22.0"
 
-react-instantsearch-native@6.22.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-native/-/react-instantsearch-native-6.22.0.tgz#45ef9670a5605edb3178b45c9e1b2b05929a7f17"
-  integrity sha512-entSMBKEsksES0eLDYJ4PJ+MUqKOfW9ZuRozjiTnF/FD6I1jMpXBDDGZAzGTxXAgyD5ICCsPjHK3vjzUMYOOgg==
+react-instantsearch-native@6.39.1:
+  version "6.39.1"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-native/-/react-instantsearch-native-6.39.1.tgz#099a09be3718eca5367f47482ddf96a531208ccc"
+  integrity sha512-Hdy6N58FCSEI+EAI5wcIGmHLsplqiRBEkT1PFxhj/KG940nRZ9UMhOaJOSK6PYwFtElIH+hk6QgJqnSZWYPgGQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch ">= 3.27.1 < 5"
-    react-instantsearch-core "6.22.0"
+    react-instantsearch-core "6.39.1"
 
-react-instantsearch@^6.12.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/react-instantsearch/-/react-instantsearch-6.22.0.tgz#95e443fd3f0e68465adfefaebdd1e84d956d21b2"
-  integrity sha512-V+5b5SmCFsH+jtKkaEqi7VKQ21R3wbQmW4tBFGlTrixxuj8aCCCS9xZMwH5H+c0E7ZiqZs4pYB3PXeYQifEaqA==
+react-instantsearch@^6.39.0:
+  version "6.39.1"
+  resolved "https://registry.yarnpkg.com/react-instantsearch/-/react-instantsearch-6.39.1.tgz#135e2b8b9240d9a5da7f8f407c21ae71b0903e3f"
+  integrity sha512-KNUVjhNJmAkzswv+cMihp1vuv0sV45rXLdAwUp2QvHOY4b6at9rZ0cT78O07xrjDEVHwSAumb5u+8iLUsg1Abw==
   dependencies:
     "@babel/runtime" "^7.1.2"
-    react-instantsearch-core "6.22.0"
-    react-instantsearch-dom "6.22.0"
-    react-instantsearch-native "6.22.0"
+    react-instantsearch-core "6.39.1"
+    react-instantsearch-dom "6.39.1"
+    react-instantsearch-native "6.39.1"
 
 react-is@^16.13.1:
   version "16.13.1"
